@@ -1,10 +1,14 @@
-version: "3.8"
+version: '3.8'
 
 services:
-  web:
+  app:
     build:
       context: .
       target: prod
+      args:
+        NODE_VERSION: ${NODE_VERSION}
+        PORT: ${PORT}
+        WORKDIR: ${WORKDIR}
     restart: always
     ports:
-      - 3000:3000
+      - ${PORT}:${PORT}

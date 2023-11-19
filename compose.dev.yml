@@ -1,12 +1,16 @@
-version: "3.8"
+version: '3.8'
 
 services:
-  web:
+  app:
     build:
       context: .
       target: dev
+      args:
+        NODE_VERSION: ${NODE_VERSION}
+        PORT: ${PORT}
+        WORKDIR: ${WORKDIR}
     ports:
-      - 3000:3000
+      - ${PORT}:${PORT}
     volumes:
-      - .:/app
-      - /app/node_modules
+      - .:${WORKDIR}
+      - ${WORKDIR}/node_modules
