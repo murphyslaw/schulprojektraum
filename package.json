@@ -1,5 +1,15 @@
 {
-  "name": "nuxt-app",
+  "name": "schulprojektraum",
+  "version": "0.0.1",
+  "description": "Sicherer, digitaler Raum für Schulen zur Präsentation der Projekte ihrer Schüler*innen.",
+  "keywords": [
+    "school",
+    "projects"
+  ],
+  "homepage": "https://github.com/murphyslaw/schulprojektraum",
+  "license": "MIT",
+  "author": "Falk Köppe <falk.koeppe@gmail.com> (https://www.linkedin.com/in/falk-koeppe/)",
+  "repository": "github:murphyslaw/schulprojektraum",
   "private": true,
   "type": "module",
   "scripts": {
@@ -30,5 +40,9 @@
   },
   "dependencies": {
     "primeicons": "^6.0.1"
+  },
+  "engines": {
+    "node": "~20.9.0",
+    "npm": "~10.2.4"
   }
 }
