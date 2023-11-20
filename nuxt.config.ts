@@ -50,6 +50,7 @@ export default defineNuxtConfig({
   css: [
     "primevue/resources/themes/lara-light-purple/theme.css",
     "primeicons/primeicons.css",
+    "/assets/tokens.css",
   ],
   modules: ["nuxt-primevue"],
   primevue: {
@@ -57,7 +58,7 @@ export default defineNuxtConfig({
       ripple: true,
     },
     components: {
-      include: [],
+      include: ["Avatar", "Menubar"],
     },
   },
 });
