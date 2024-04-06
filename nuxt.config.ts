@@ -58,7 +58,16 @@ export default defineNuxtConfig({
       ripple: true,
     },
     components: {
-      include: ["Avatar", "Menubar"],
+      include: [
+        "Avatar",
+        "Menubar",
+        "DataView",
+        "DataViewLayoutOptions",
+        "Button",
+        "Dropdown",
+        "Card",
+        "Chip",
+      ],
     },
   },
 });

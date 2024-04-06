@@ -1,5 +1,5 @@
 <template>
-  <div class="logo">
+  <NuxtLink to="/" class="logo">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
       <path
         fill="var(--primary-color)"
@@ -8,7 +8,7 @@
     </svg>
 
     <span>Schulprojektraum</span>
-  </div>
+  </NuxtLink>
 </template>
 
 <style scoped>
@@ -16,6 +16,7 @@
   display: flex;
   align-items: center;
   column-gap: var(--inline-spacing);
+  text-decoration: none;
 }
 
 .logo span {
